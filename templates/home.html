@@ -1,0 +1,8 @@
+<h1>Word Count</h1>
+
+<form action="{% url 'count' %}"> <!-- When the user hits count, this action takes them to the count URL -->
+<textarea cols="40" rows="5" name="fulltext"></textarea> <!-- This configures a text area to allow for keyboard input -->
+<br>
+<input type="submit" value="Count!" /> <!-- This Creates a button that when pressed takes the value from text area and sends the user to the count URL -->
+</form>
+<a href="{% url 'about' %}">About Page</a>
